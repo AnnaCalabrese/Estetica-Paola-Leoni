@@ -1,0 +1,313 @@
+/*
+Theme Name: Tema Estetista
+Author: Anna Calabrese
+Version: 1.0
+Description: This is a project made to complete the Wordpress Guide on the S2i course
+Tags: responsive, warm, spa, cozy
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 300;
+  background-color: var(--pink);
+  overflow-x: hidden;
+}
+/*VARIABLES*/
+:root {
+  --white: #ebe4de;
+  --black: #333333;
+  --pink: #f3dcd4;
+  --orange: #c29875;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--black);
+  letter-spacing: 3px;
+  line-height: 1.6;
+}
+
+.button,
+a {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 20px 30px;
+}
+.logo {
+  color: var(--black);
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+ul li {
+  padding-left: 30px;
+  align-self: center;
+  padding-right: 20px;
+
+}
+ul li a {
+  text-decoration: none;
+  color: var(--black);
+}
+ul li a:hover {
+  color: var(--orange);
+}
+.hamburger-btn {
+  display: none;
+}
+.btn {
+  background-color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--orange);
+  border-radius: 30px;
+  color: var(--black);
+  transition-duration: 0.5s;
+}
+.cta a{
+  color:var(--white);
+}
+.cta a:hover{
+  color:var(--black);
+}
+.main-container {
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  max-width: 100%;
+
+  display: flex;
+}
+.main-content {
+  max-width: 650px;
+  margin: 130px 0 0 30px;
+  font-size: 23px;
+}
+
+/******************CHI SIAMO***************/
+.chisiamo-container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row: auto auto;
+}
+.chisiamo-fotostudio {
+  background-size: cover;
+  max-width: 100%;
+  height: 450px;
+}
+.chisiamo-fotocolleghi {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 422px;
+}
+.chisiamo-content {
+  padding: 50px;
+  margin: auto 0;
+}
+
+.chisiamo-content h1 {
+  color: var(--orange);
+  font-size: 50px;
+}
+/***************FOOTER*****************/
+footer {
+  display: grid;
+  background-color: var(--black);
+  color: var(--white);
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  text-align: center;
+}
+
+footer p,
+footer .logo {
+  color: var(--white);
+}
+footer div {
+  padding: 10px;
+}
+.footer-info {
+  margin: auto 0;
+}
+.footer-info p {
+  max-width: 300px;
+  margin: 20px auto;
+}
+.footer-orari {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: baseline;
+}
+
+.footer-orari p {
+  margin-top: 15px;
+}
+.footer-orari div {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.footer-orari div a {
+  margin: 0 30px;
+}
+
+/***************LISTINO PREZZI*****************/
+.servizi-page {
+  padding: 60px;
+  background-color: var(--white);
+}
+.price-table {
+  display: flex;
+  justify-content: space-between;
+}
+.price-table-text {
+  padding-right: 20px;
+  padding-bottom: 2px;
+}
+h4 {
+  background-color: var(--orange);
+  display: block;
+  margin-top: 30px;
+  padding: 3px;
+}
+
+/****************CONTATTI*********************/
+form {
+  max-width: 420px;
+  margin: 50px;
+}
+.feedback-input {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #333333;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #757575;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #333333;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #518d65;
+}
+/***************MEDIA QUERIES*****************/
+
+@media (max-width: 700px) {
+  .main-container {
+    background-position: center;
+    width: 100%;
+    height: auto;
+  }
+  .main-content {
+    margin: 30px;
+  }
+  h1,
+  h2,
+  h3,
+  .chisiamo-content h1 {
+    font-size: 25px;
+  }
+
+  .chisiamo-container {
+    grid-template-columns: 1fr;
+  }
+  .chisiamo-fotocolleghi {
+    height: 250px;
+  }
+  .chisiamo-content {
+    padding: 30px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+  }
+  nav h1 {
+    max-width: 200px;
+  }
+  .hamburger-btn {
+    display: inline-block;
+    cursor: pointer;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+  }
+  ul li {
+    padding: 25px 0;
+    text-align: left;
+    width: 400px;
+  }
+
+  .open {
+    display: flex;
+  }
+}
