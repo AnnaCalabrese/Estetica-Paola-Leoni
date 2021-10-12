@@ -2,7 +2,7 @@
 
 ## :dart: About The Project ##
 In this project you can find a simple wordpress theme that was developed for a beauty salon.
-I used 2 plugin, Contact Form 7 for the contact form and Elementor to insert the map.
+I used 2 plugins, Contact Form 7 for the contact form and Elementor to insert the map.
 This was made to complete the Start2impact "Wordpress" Superguide.
 
 ## ⬇️ Screenshot
