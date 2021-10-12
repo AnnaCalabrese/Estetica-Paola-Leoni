@@ -24,7 +24,7 @@ View it live at <a href src="https://dev-estetica-paola-leoni.pantheonsite.io/
 
 ## :dart: How can I improve? ##
 Because I was not familiar with PHP I struggled a lot in the beginning so I will definitely need to focus on learning PHP language in the future. I'm proud of what I managed to create anyway but I know that It could have some improvements on some parts. 
-In my next Wordpress projects I would like to try all the Elementor functionalities for development.
+In my next Wordpress projects I would like to try all the Elementor functionalities for full development of websites.
 
 ## :memo: Contact ##
 
